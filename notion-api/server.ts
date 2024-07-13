@@ -6,7 +6,13 @@ const app: Express = express();
 const port = process.env.PORT || 3000;
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("HELLO");
+  res.send("Server is running, sir!");
+});
+
+// Notion Routes
+
+app.post("", (req, res) => {
+  res.send();
 });
 
 app.listen(port, () => {
